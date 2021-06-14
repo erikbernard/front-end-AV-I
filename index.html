@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Erik B.S </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="credito" class="modal">
+        <div class="modal-content">
+            <span class="close">
+                <span>Créditos</span>
+                <img onclick="" src="./img/btn-close.svg" alt="Fecha">
+            </span>
+            <div class="textModal">
+                <span class="title">Disciplina</span>
+                <span class="subTitle">Desenvolvimento de software para web</span>
+                <span class="title">Nome</span>
+                <spanc class="subTitle">Erik Bernardo da silva</spanc>
+            </div>
+            <div class="emoji">
+                👍
+            </div>
+        </div>
+
+    </div>
+    <header>
+        <div class="menuContent"></div>
+        <img class="seletor" src="./img/seletor.svg" alt="seletor menu">
+        <div class="menu">
+            <a href="index.html"><span>Home</span></a>
+            <a href="sobre.html"><span>Sobre</span></a>
+            <a href="contato.html"><span>Contato</span></a>
+        </div>
+    </header>
+    <main>
+        <section class="bodyText">
+            <span class="textSpan">
+                Não há guerra entre bem e o mal,
+                Há guerra entre o conhecimento e a ignorância.
+            </span>
+        </section>
+        <section class="cartao">
+            <p class="title">Deixe recado</p>
+            <form onsubmit="submitForm(event)" id="form" method="post" name="dados">
+                <p>Nome</p>
+                <input class="inputText" maxlength="28" type="text" name="name" id="name" required>
+                <p>Mendagem</p>
+                <input class="inputText" maxlength="28" type="text" name="mensg" id="mensg" required>
+                <button class="btnForm" type="submit">Enviar</button>
+            </form>
+            <div id="view" class="list">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content">
+            <div class="textInfor">
+                <img src="./img/copywrite.svg" alt="copywrite">
+                <span class="text">Erik Berardo - Todos os direitos reservados</span>
+            </div>
+            <div class="btnCreditos">
+                <button onclick="openModal()" id="btnCreditos" class="btn">
+                    <img src="./img/person.svg" alt="Créditos">
+                    <span class="text">Créditos</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
